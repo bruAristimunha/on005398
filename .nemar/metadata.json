@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Open iEEG Dataset (Pediatric iEEG, Wayne State University and UCLA)",
-  "description": "This dataset contains de-identified intracranial EEG (iEEG) recordings during sleep from 185 pediatric epilepsy patients collected at UCLA Mattel Children's Hospital and Children's Hospital of Michigan, Detroit. It includes channel-level anatomical labels, resection status, and outcome information, along with derivatives for high-frequency oscillation (HFO) detection and classification using RMS and MNI detectors. The dataset supports research on interictal iEEG biomarkers for predicting epilepsy surgery outcomes.",
-  "methods_description": "Interictal iEEG recordings were collected during sleep from pediatric epilepsy patients. Subject-wise data includes channel names, anatomical labels, and resection status. HFO detection and classification derivatives were generated using RMS and MNI detection methods, with additional bipolar iEEG data processed for time-frequency analysis.",
+  "description": "This dataset contains interictal intracranial EEG (iEEG) recordings acquired during sleep from 185 de-identified pediatric epilepsy patients at UCLA Mattel Children's Hospital and Children's Hospital of Michigan. Per-subject folders include channel information, anatomical labels and resection status, and participant-level outcomes and background information. Derivatives include high-frequency oscillation (HFO) detections from RMS and MNI detectors, along with bipolar iEEG data used in a related study.",
+  "methods_description": "Interictal iEEG recordings were collected during sleep from pediatric epilepsy patients at UCLA Mattel Children's Hospital and Children's Hospital of Michigan. Subject-wise data includes channel names, anatomical labels, and resection status. HFO detection derivatives were generated using RMS and MNI detectors. Bipolar iEEG data used in a related time-frequency analysis study are also provided.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -91,9 +91,10 @@
   },
   "keywords": [
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "iEEG"
     },
     {
       "term": "Epilepsy",
@@ -104,19 +105,13 @@
       "term": "high-frequency oscillations"
     },
     {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "pediatric epilepsy"
-    },
-    {
-      "term": "epilepsy surgery"
+      "term": "pediatric"
     },
     {
       "term": "sleep"
     },
     {
-      "term": "HFO detection"
+      "term": "epilepsy surgery outcome"
     }
   ],
   "related_identifiers": [
@@ -153,7 +148,7 @@
     {
       "identifier": "10.64898/2026.06.12.26355482",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "References"
     },
     {
       "identifier": "https://nemar.org/dataset/on005398",
@@ -177,7 +172,7 @@
     "ieeg"
   ],
   "sizes": [
-    "176.8 GB (537 files)"
+    "165 GB (537 files)"
   ],
   "formats": [
     ".csv",
